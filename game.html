@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>翻牌游戏</title>
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/base.js" type="text/javascript"></script>
+    <style>
+        body { margin: 0 auto; padding: 0; width: 1024px; height: 768px; }
+        #container { width: 1024px; height: 768px; margin: 0; padding: 0; background: url(img/bg.png) 0 0 no-repeat;
+                     position: relative; }
+        ul { margin: 0; padding: 30px 0 0 133px; }
+        li { list-style: none; float: left; position: relative; width: 173px; height: 125px;
+            margin: 0 32px 10px 0; }
+        .list li img { width: 173px; height: 125px; }
+        .clear { clear: left; }
+        .hide { display: none; position: absolute; z-index: 10; top: 0; left: 0; }
+        .match { position: absolute; z-index:10; top:622px; left:145px; }
+        .match img { width:760px; display: none; }
+        .close { position:absolute; z-index:100; top:29px; right:33px; }
+        .close img { width: 50px; height: 63px; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul class="list">
+            <li><img src="img/fan.png"/><img src="img/america.png" class="hide" title="america"/></li>
+            <li><img src="img/fan.png"/><img src="img/england1.png" class="hide" title="england"/></li>
+            <li><img src="img/fan.png"/><img src="img/china1.png" class="hide" title="china"/></li>
+            <li class="clear"><img src="img/fan.png"/><img src="img/bolan1.png" class="hide" title="bolan"/></li>
+            <li><img src="img/fan.png"/><img src="img/menggu.png" class="hide" title="menggu"/></li>
+            <li><img src="img/fan.png"/><img src="img/india.png" class="hide" title="india"/></li>
+            <li><img src="img/fan.png"/><img src="img/japan1.png" class="hide" title="japan"/></li>
+            <li class="clear"><img src="img/fan.png"/><img src="img/america1.png" class="hide" title="america"/></li>
+            <li><img src="img/fan.png"/><img src="img/india1.png" class="hide" title="india"/></li>
+            <li><img src="img/fan.png"/><img src="img/bolan.png" class="hide" title="bolan"/></li>
+            <li><img src="img/fan.png"/><img src="img/japan.png" class="hide" title="japan"/></li>
+            <li class="clear"><img src="img/fan.png"/><img src="img/menggu1.png" class="hide" title="menggu"/></li>
+            <li><img src="img/fan.png"/><img src="img/england.png" class="hide" title="england"/></li>
+            <li><img src="img/fan.png"/><img src="img/china.png" class="hide" title="china"/></li>
+        </ul>
+
+        <div class="clear"></div>
+        <div class="match"><img src="img/america_match.png" ></div>
+        <div class="close"><a href="navto://第一单元上#3" target="_blank"><img src="img/close.png" /></a></div>
+    </div>
+<script>
+    $(document).ready(function(){
+        page.action();
+    });
+</script>
+</body>
+</html>
